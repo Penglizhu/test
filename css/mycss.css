@@ -61,6 +61,7 @@ header .header-inner{
 	line-height: 83px;
 	padding: 0px 14px;
 	color: #ffffff;
+	
 }
 .plz .navbar-collapse li:nth-of-type(1) a{
 color: #db6f6a;	
@@ -69,6 +70,12 @@ color: #db6f6a;
 	color: #db6f6a;
 }
 
+.abc{
+	color: #777!important;
+}
+.current{
+	color: #db6f6a!important;
+}
 .page .page-head{
 	color: white;
 background: url(../img/boots/header-app-image.jpg) no-repeat;
