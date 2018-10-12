@@ -1,6 +1,7 @@
 $(window).scroll(function(){
 	if ($(window).scrollTop()>0) {
 		$('#plzheader').css('background','white')
+		$('#plzheader').css('box-shadow','0 0 5px rgba(0, 0, 0, 0.19)')
 		$('.navbar-right li a').addClass('abc')
 	} else{
 		$('#plzheader').css('background','transparent')
@@ -8,7 +9,7 @@ $(window).scroll(function(){
 	}
 	
     $('.navbar-right>li').hover(function(){
-	console.log('111')
+	
 	$(this).children('a').addClass('current')
 },function(){
 	$(this).children('a').removeClass('current')
@@ -33,3 +34,8 @@ $('.navbar-right li a').click(function() {
     return false;
 });
 });
+
+$('.question').click(function(){
+	$(this).children('.question-title').children('.question-icon').children('font').toggle()
+	$(this).children('.answer').toggle();
+})

@@ -6,6 +6,8 @@
 		<title></title>
 		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 	    <link rel="stylesheet" href="css/mycss.css" />
+	    <link rel="stylesheet" href="css/animate.css" />
+	    
 	</head>
 
 	<body>
@@ -145,8 +147,8 @@
 			 			</div>
 			 		</div>
 			 	</div>
-			 	<div class="col-md-4  middle">
-			 		<img src="img/boots/3_mockup.jpg" />
+			 	<div class="col-md-4  middle ">
+			 		<img src="img/boots/3_mockup.jpg" class="wow bounceInUp" data-wow-duration="3s"/>
 			 	</div>
 			 	<div class="col-md-4 right">
 			 		<div class="left1">
@@ -273,52 +275,52 @@
 			 <div class="row">
                  <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
-                    <img src="img/boots/IMG_0029.png" alt="...">
+                    <img src="img/boots/IMG_0029.png" alt="..." class="wow bounceInLeft" data-wow-duration="1s">
                    </div>
                  </div>
            
             
                  <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
-                    <img src="img/boots/IMG_0030.jpg" alt="...">
+                    <img src="img/boots/IMG_0030.jpg" alt="..." class="wow bounceInDown" data-wow-duration="1s">
                    </div>
                  </div>
             
            
                  <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
-                    <img src="img/boots/1-500x885.jpg" ="...">
+                    <img src="img/boots/1-500x885.jpg" ="..." class="wow fadeInRight" data-wow-duration="1s">
                    </div>
                  </div>
             
             
                  <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
-                    <img src="img/boots/5-min.jpg" alt="...">
+                    <img src="img/boots/5-min.jpg" alt="..." class="wow fadeInRight" data-wow-duration="1s">
                    </div>
                  </div>
                  
                  <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
-                    <img src="img/boots/6.jpg" alt="...">
+                    <img src="img/boots/6.jpg" alt="..." class="wow fadeInUp" data-wow-duration="1s">
                    </div>
                  </div>
                  
                  <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
-                    <img src="img/boots/3-min.jpg" alt="...">
+                    <img src="img/boots/3-min.jpg" alt="..." class="wow pulse" data-wow-duration="1s">
                    </div>
                  </div>
                  
                  <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
-                    <img src="img/boots/4.jpg" alt="...">
+                    <img src="img/boots/4.jpg" alt="..." class="wow fadeInLeft" data-wow-duration="1s">
                    </div>
                  </div>
                  
                  <div class="col-sm-6 col-md-3">
                    <div class="thumbnail">
-                    <img src="img/boots/2.jpg" alt="...">
+                    <img src="img/boots/2.jpg" alt="..." class="wow fadeInUp" data-wow-duration="1s">
                    </div>
                  </div>
                  
@@ -331,8 +333,44 @@
 			 	   <h3>What <strong>SKIPT</strong> users are saying</h3>
 			 	   <hr class="use-hr" />
 			    </div>
-			  <div class="clearfix">
-			  	<div class="say-pic say-pic2 ">
+			    
+			    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner" role="listbox">
+
+				<div class="say-pic say-pic2 item active">
+					<h3>SKIPT is avesome!</h3>
+					<div class="say-images">
+						<img src="img/boots/testimonial1.png" />
+						<p>Rick <span>Johnson</span></p>
+						<p>Happy App User</p>
+					</div>
+				</div>
+
+				<div class="say-pic item">
+					<h3>SKIPT is avesome!</h3>
+					<div class="say-images">
+						<img src="img/boots/testimonial2.png" />
+						<p>Rick <span>Johnson</span></p>
+						<p>Happy App User</p>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="saybottom">
+
+				<!-- Controls -->
+				<a href="#carousel-example-generic" role="button" data-slide="prev">
+					<img src="img/boots/left.png" />
+				</a>
+				<a href="#carousel-example-generic" role="button" data-slide="next">
+					<img src="img/boots/right.png" />
+				</a>
+			</div>
+		</div>
+			    
+			  <!--<div class="clearfix">
+			  	<div class="say-pic say-pic2">
 			    	<h3>SKIPT is avesome!</h3>
 			    	<div class="say-images">
 			    		<img src="img/boots/testimonial1.png"/>
@@ -348,11 +386,11 @@
 			    		<p>Happy App User</p>
 			    	</div>
 			    </div>
-			  </div>
-			  <div class="saybottom">
+			  </div>-->
+			  <!--<div class="saybottom">
 			  	<a><img src="img/boots/left.png"/></a>
 			  	<a><img src="img/boots/right.png"/></a>
-			  </div>
+			  </div>-->
 			</div>
 		</div>
 		<div class="download">
@@ -376,13 +414,13 @@
 			 	<hr class="use-hr" />
 			    <div class="question clearfix">
 			  		<div class="question-title">
-			  			<span class="question-icon">
+			  			<span class="question-icon clearfix" >
 			  				<i></i>
 			  				<font></font>
 			  			</span>
 			  			<h4>1. What is SKIPT?</h4>
 			  	    </div>
-			  	    <div class="answer">
+			  	    <div class="answer" >
 			  	    	<p>SKIPT is a new app that allows you to either save time by skipping lineups or make money for your time spent waiting in a line.</p>
 			  	    </div>
 			  	</div>
@@ -395,7 +433,7 @@
 			  			</span>
 			  			<h4> 2. How Does SKIPT Work?</h4>
 			  	    </div>
-			  	    <div class="answer">
+			  	    <div class="answer" >
 			  	    	<p>SKIPT enables users to buy and sell any spot, in any line by giving users the opportunity to find one another based on their location. If there are spots available to bid for in line, you can make an offer for that spot through SKIPT. Once your offer is accepted by the seller, you will be able to contact the seller and head to your new spot in line. To sell your spot in line, simply post your spot on SKIPT, set your minimum price, duration and you’re done. Your spot will automatically be available to buyers using SKIPT in that location.</p>
 			  	    </div>
 			  	</div>
@@ -493,9 +531,14 @@
 				</div>
 			</div>
 		</div>
+		<script type="text/javascript" src="js/wow.js" ></script>
 		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		
 		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js" ></script>
 	    <script type="text/javascript" src="js/myjs.js" ></script>
+	    <script type="text/javascript">
+          new WOW().init();
+        </script>
 	</body>
 
 </html>
